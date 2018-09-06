@@ -4,3 +4,4 @@ print(greeter("Stan"))
 
 print(greeter("Stan"))
 print(greeter("Ollie"))
+print(greeter("Tom"))

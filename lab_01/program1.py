@@ -15,6 +15,8 @@ def extra_end(str):
   return str[-2:]+str[-2:]+str[-2:]
 def first_two(str):
   return str[0:2]
+def first_half(str):
+  return str[:len(str)//2]
 
 print(hello_name("Bob"))
 print(make_abba("Hello","World"))
@@ -22,4 +24,5 @@ print(make_tags("i", "Yay"))
 print(make_out_word("<<>>", "Yay"))
 print(extra_end("Hello"))
 print(first_two("Hello"))
+print(first_half("WooHoo"))
 

@@ -42,3 +42,7 @@ print(part_pig_latin("hello"))
 def make_out_word(out, word):
   return out[0:2]+word+out[-2:]
 print(make_out_word("<<>>", "Yay"))
+
+def make_tags(tag, word):
+  return "<"+tag+">" + word + "</"+tag+">"
+print(make_tags("i", "Yay"))

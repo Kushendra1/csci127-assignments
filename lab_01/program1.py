@@ -23,6 +23,8 @@ def combo_string(a, b):
   if len(a) > len(b):
     return b + a + b
   return a + b + a
+def non_start(a, b):
+  return a[1:] + b[1:]
 
 print(hello_name("Bob"))
 print(make_abba("Hello","World"))
@@ -33,3 +35,4 @@ print(first_two("Hello"))
 print(first_half("WooHoo"))
 print(without_end("Hello"))
 print(combo_string("Hello", "Hi"))
+print(non_start("python", "code"))

@@ -19,6 +19,10 @@ def first_half(str):
   return str[:len(str)//2]
 def without_end(str):
   return str[1:-1]
+def combo_string(a, b):
+  if len(a) > len(b):
+    return b + a + b
+  return a + b + a
 
 print(hello_name("Bob"))
 print(make_abba("Hello","World"))
@@ -28,3 +32,4 @@ print(extra_end("Hello"))
 print(first_two("Hello"))
 print(first_half("WooHoo"))
 print(without_end("Hello"))
+print(combo_string("Hello", "Hi"))

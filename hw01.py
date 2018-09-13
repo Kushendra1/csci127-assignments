@@ -28,3 +28,12 @@ def init(name):
     return cap_first+"."+cap_sec+name[(space_index+2):]
 
 print(init("kushendra ramrup"))
+
+def part_pig_latin(name):
+     """
+    Input: A string that is a single lower case word
+    Returns: that string in fake pig latin -> move the first letter of the word to the end and add "ay"
+    so: "hello" --> "ellohay"
+    """
+     return name[1:] + name[0] + "ay"
+print(part_pig_latin("hello"))

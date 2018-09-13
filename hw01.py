@@ -36,4 +36,9 @@ def part_pig_latin(name):
     so: "hello" --> "ellohay"
     """
      return name[1:] + name[0] + "ay"
+    
 print(part_pig_latin("hello"))
+
+def make_out_word(out, word):
+  return out[0:2]+word+out[-2:]
+print(make_out_word("<<>>", "Yay"))

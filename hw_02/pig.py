@@ -1,4 +1,4 @@
-
+#Kushendra Ramrup and Madison Chen worked
 def part_pig_latin(name):
     vowels = ("a","e","i","o","u", "A", "E", "I", "O", "I")
     first_letter = name[0]

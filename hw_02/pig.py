@@ -9,3 +9,5 @@ def piglatinify(name):
     
 print(piglatinify("Madison"))
 print(piglatinify("Allison"))
+print(piglatinify("kush"))
+print(piglatinify("eddie"))

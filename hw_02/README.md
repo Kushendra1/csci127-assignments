@@ -1,1 +1,1 @@
-Kushendra Ramrup and Madison CHen worked on this project.
+Kushendra Ramrup and Madison Chen worked on this project.

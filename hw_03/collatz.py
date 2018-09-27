@@ -1,3 +1,5 @@
+#Kushendra Ramrup and Sam Ebersole
+
 def collatz(n):
     count = 0
     while n != 1:

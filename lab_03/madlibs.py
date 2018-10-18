@@ -2,6 +2,7 @@ import random
 
 sentence = "<First_Name> Reeves, whose name means <Adjective> <Noun> over the <Noun> in Hawaiian, <Verb> for a living."
 sentence2 = "<Hero> <Verb> in the <Noun> and then <Hero> <Verb> the <Noun> later."
+sentence3 = "<First_Name> eats a <Adjective> <Noun> before he goes to <Noun> . It was there, where he encountered his enemy <Hero> , and then <Verb> for the entire day."
 
 First_Name = ["Keanu", "Charles", "Agatha", "Leslie"]
 Adjective = ["dead", "metal", "massive", "blue"]
@@ -38,3 +39,4 @@ def madlibs(s):
 
 print(madlibs(sentence))
 print(madlibs(sentence2))
+print(madlibs(sentence3))

@@ -7,8 +7,6 @@ def compress_word(w):
         if i in vowels:
             newstr = w[1:].replace(i, "")
     return w[0] + newstr
-    #new_word = no_vowel(word)
-    #return w[0] + new_word
 
 print(compress_word("apple"))
 print(compress_word("orange"))

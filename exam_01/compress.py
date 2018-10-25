@@ -1,4 +1,3 @@
-
 ##def compress_word(w):
 ##    word = w[1:]
 ##    newstr = ""
@@ -27,3 +26,5 @@ def sentence(line):
             l.append(compress_word(i))
     return " ".join(l)
 print(sentence("I like apples"))
+
+

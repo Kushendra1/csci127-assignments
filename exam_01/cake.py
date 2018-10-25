@@ -7,3 +7,6 @@ def cake_amount(A,B,u):
 print(cake_amount(5,10,1))
 print(cake_amount(5,10,2))
 print(cake_amount(3,18,1))
+
+#Cake solution
+

@@ -7,7 +7,7 @@ def count(b):
                 color.append(i)
                 amount.append(1)
             else:
-                amount[color.index(1)]+=1
+                amount[color.index(i)]+=1
     return amount
 
 def happy(l, str):
@@ -32,4 +32,4 @@ def HappyLadyBug(n,b):
         return "Yes"
     
 print(HappyLadyBug(3, "RB_"))
-print(HappyLadyBug(6, "RBR__B"))
+print(HappyLadyBug(0, ""))

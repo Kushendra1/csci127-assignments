@@ -1,20 +1,21 @@
 def count(b):
-    color = []
-    amount = []
+    d={}
+    d["color"] = []
+    d["amount"] = []
     for i in b:
         if i != "_":
-            if i not in color:
-                color.append(i)
-                amount.append(1)
+            if i not in d["color"]:
+                d["color"].append(i)
+                d["amount"].append(1)
             else:
-                amount[color.index(i)]+=1
-    return amount
+                d["amount"][d["color"].index(i)]+=1
+    return d["amount"]
 
 def happy(l, str):
     if l < 3:
-        if n == 1 and str[0] == "_":
+        if l == 1 and str[0] == "_":
             return True
-        if str[0] == str[1]:
+        if l == 2 and str[0] == str[1]:
             return True
         else:
             return False

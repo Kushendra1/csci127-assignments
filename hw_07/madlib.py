@@ -11,7 +11,7 @@ d["Noun"] = ["tank", "sky", "kitty", "jaguar", "mountain", "karate", "weeds", "w
 d["Verb"] = ["meditates", "acts", "jumps", "explodes", "ate", "ran"]
 d["Hero"] = ["Superman", "Wonder-Woman", "Batman", "Thor", "Spiderman"]
 
-def madlibs(s):
+def madlibs(s, dict):
     new_sentence = []
     hero_name = random.choice(d["Hero"])
     for item in s.split():
@@ -29,6 +29,6 @@ def madlibs(s):
             new_sentence.append(item)
     return " ".join(new_sentence)
 
-print(madlibs(sentence))
-print(madlibs(sentence2))
-print(madlibs(sentence3))
+print(madlibs(sentence, d))
+print(madlibs(sentence2, d))
+print(madlibs(sentence3, d))

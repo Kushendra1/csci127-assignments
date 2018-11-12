@@ -16,13 +16,13 @@ def madlibs(s, dict):
     hero_name = random.choice(d["Hero"])
     for item in s.split():
         if item == "<First_Name>":
-            new_sentence.append(random.choice(d["First_Name"]))
+            new_sentence.append(random.choice(dict["First_Name"]))
         elif item == "<Adjective>":
-            new_sentence.append(random.choice(d["Adjective"]))
+            new_sentence.append(random.choice(dict["Adjective"]))
         elif item == "<Noun>":
-            new_sentence.append(random.choice(d["Noun"]))
+            new_sentence.append(random.choice(dict["Noun"]))
         elif item == "<Verb>":
-            new_sentence.append(random.choice(d["Verb"]))
+            new_sentence.append(random.choice(dict["Verb"]))
         elif item == "<Hero>":
             new_sentence.append(hero_name)
         else:

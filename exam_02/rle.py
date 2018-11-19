@@ -12,10 +12,12 @@ print(encode("abcd"))
 
 def decode(l):
     n = []
-    for item,num in l: 
-        new = item*num
-        l += new
-    return "".join(l)
+    lexicon = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    for i in l:
+        if l[1] > len(l):
+            n.append(l[0])
+            print(l[1])
+            print(n)
         
 list = ["A", 1]
 list2 = ["b", 2]

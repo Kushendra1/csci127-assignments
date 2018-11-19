@@ -1,2 +1,3 @@
 Make Acronym does not work because it reports a problem with the indices
 Decode does not work because I did not get to finish it
+I finished Decode and fixed encode, after the exam- 11:38AM

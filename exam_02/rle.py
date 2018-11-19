@@ -9,3 +9,6 @@ def encode(s):
 
 print(encode("abbaaacddaaa"))
 print(encode("abcd"))
+
+def decode(l):
+    

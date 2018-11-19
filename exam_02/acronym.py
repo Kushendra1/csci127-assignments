@@ -6,7 +6,7 @@ def makeacronym(w):
         if w[k] == " ":
             n.append(w[k+1])
             break
-        return n
+    return n
 
 print(makeacronym("laugh out loud"))
 print(makeacronym("in my opinion"))

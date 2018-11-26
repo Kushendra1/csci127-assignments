@@ -9,6 +9,16 @@ def makeacronym(w):
             break
     return n
 
-print(makeacronym("laugh out loud"))
-print(makeacronym("in my opinion"))
+#print(makeacronym("laugh out loud"))
+#print(makeacronym("in my opinion"))
 
+#----------SOLUTION------------#
+
+def make_acronym(line):
+    result = ""
+    for word in line.split():
+        result = result + word[0]
+    return result
+
+print(make_acronym("laugh out loud"))
+print(make_acronym("in my opinion"))

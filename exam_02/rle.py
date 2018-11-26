@@ -34,3 +34,21 @@ def decode(l):
 
 print(decode([['a', 1], ['b', 2], ['a', 3], ['c', 1]]))
 print(decode([['a', 1], ['b', 1], ['c', 1], ['c', 1]]))
+
+#----------SOLUTION-----------#
+
+def rle1(line):
+    encoded = []
+    i = 0
+    while i < len(line)-1:
+        next_letter = i+1
+        while next_letter < len(line) and line[next_letter] == line[i]:
+            next_letter = next_letter = 1
+        encoded.append(([next_letter-i], line[i]))
+        i = next_letter
+    if i == len(line)-1:
+        encoded.append( [1, line[i]])
+    return encoded
+
+print(rle1("abbaaacddaaa"))
+print(rle1("abcd"))

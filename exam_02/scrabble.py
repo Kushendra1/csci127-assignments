@@ -44,4 +44,29 @@ def score(w):
 print(score("hello"))
 print(score("what"))
         
-        
+#----------SOLUTION-----------#
+composite_scores = {("A","E","I","O","U","L","N","R","S","T") : 1,
+                    ("D", "G") : 2,
+                    ("B","C","M","P"): 3,
+                    ("F","H","W","Y","V"): 4,
+                    ("K"): 5,
+                    ("J","X"): 8,
+                    ("Q","Z"): 10}
+
+def score1(word, scores):
+    score = 0
+    for letter in word:
+        for k in scores:
+            if letter in k:
+                score = score + scores[k]
+    return score
+
+def score2(word,scores_raw):
+    scores = {}
+    for k in scores_raw:
+        for letter in k:
+            scores[letter] = scores_raw[k]
+    score = 0
+    for letter in word:
+        score = score + scores[letter]
+    return score

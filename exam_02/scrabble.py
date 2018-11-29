@@ -64,7 +64,7 @@ def score1(word, scores):
 def score2(word,scores_raw):
     scores = {}
     for k in scores_raw:
-        for letter in k:
+        for letter in k:cd c
             scores[letter] = scores_raw[k]
     score = 0
     for letter in word:

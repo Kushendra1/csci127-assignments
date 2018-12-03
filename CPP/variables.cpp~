@@ -1,0 +1,10 @@
+#include <iostream>
+
+int main()
+{
+  int i;
+  i = 20;
+  int some_variable = 10, another_variable;
+  i = i + some_variable;
+  return 0;
+}

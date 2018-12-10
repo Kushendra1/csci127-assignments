@@ -1,0 +1,7 @@
+Kushendra Ramrup
+
+
+There is a warning in the second file that keeps popping up. It states 
+"statement has no effect" to my for loop, but doesn't actally affect
+the program. I don't know how to get rid of it.  The function runs fine 
+otherwise.

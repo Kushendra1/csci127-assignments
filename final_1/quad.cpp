@@ -12,16 +12,12 @@ int quadsolve(int a, int b, int c) {
   if (x >= 0)
   {
     int s;
-    s = (-b) + (sqrt(x));
-    int r;
-    r = s/(2 * a);
-    return r;
+    s = (-b + sqrt(x)) / (2*a);
+    return s;
   }
   else
   {
-    int t;
-    t = 0;
-    return t;
+    return 0;
   }
 }
 
@@ -39,5 +35,8 @@ int main() {
   int g;
   g = quadsolve(3,2,1);
   std::cout << g << "\n";
+  int w;
+  w = quadsolve(1,2,3);
+  std::cout << w << "\n";
   return 0;
 }

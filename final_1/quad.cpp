@@ -12,7 +12,7 @@ int quadsolve(int a, int b, int c) {
   if (x >= 0)
   {
     int s;
-    s = (0-b) + (sqrt(x));
+    s = (-b) + (sqrt(x));
     int r;
     r = s/(2 * a);
     return r;

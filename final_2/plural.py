@@ -22,7 +22,7 @@ def notPossesive(line):
             continue
     return count
 print(notPossesive("heads hers adam's gail's"))
-print(notPossesive("adam's kim's kevin's dogs"))
+print(notPossesive("adam's kim's kevin's"))
 
 
 

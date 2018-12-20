@@ -33,8 +33,8 @@ print(addline(dict2, "wind earth fire agua"))
 d = addline({}, "string")
 d = addline(d, "movie")
 d = addline(d, "cars")
-d = addline(d, "time")
-d = addline(d, "branch")
+dict3 = addline(d, "time")
+dict4 = addline(dict3, "branch")
 
 def spellcheck(d, word):
     new_word = word.lower()
@@ -44,6 +44,7 @@ def spellcheck(d, word):
         else:
             return False
     return False
-
+print(spellcheck(dict3, "time"))
+print(spellcheck(dict4, "yurr"))
     
     

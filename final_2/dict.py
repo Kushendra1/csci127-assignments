@@ -15,6 +15,7 @@ def addline(d,line):
     new_line = line.lower()
     letter = new_line[0]
     d1 = {}
+##    print(new_line.split())
     for i in new_line:
         if letter in d.keys():
             d[letter].append(new_line)

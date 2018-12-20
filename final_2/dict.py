@@ -13,13 +13,17 @@
 
 def addline(d,line):
     new_line = line.lower()
-    letter = line[0]
+    letter = new_line[0]
     d1 = {}
-    if letter in d.keys():
-        d[letter].append(new_line)
-    else:
-        d1[letter] = [new_line]
+    for i in new_line:
+        if letter in d.keys():
+            d[letter].append(new_line)
+        else:
+            d1[letter] = [new_line]
     return d1
 
 dict = {"name": "jack", "person": "two"}
 print(addline(dict, "name face person"))
+dict2 = {"water" : "wet", "earth": "hard", "fire": "hot", "air" : "cool"}
+print(addline(dict2, "wind earth fire agua"))
+
